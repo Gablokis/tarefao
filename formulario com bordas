@@ -10,10 +10,10 @@
     <strong>Valor 1: </strong><input class="input"> <br>
       <strong>Valor 2: </strong><input class="input"> <br>
         Opções: <br>
-        <input type="button" class="circulo"> Soma <br>
-        <input type="button" class="circulo"> Subtração <br>
-        <input type="button" class="circulo"> Multiplicação <br>
-        <input type="button" class="circulo"> Divisão <br>
+        <input type="radio"> Soma <br>
+        <input type="radio"> Subtração <br>
+        <input type="radio"> Multiplicação <br>
+        <input type="radio"> Divisão <br>
 <p><strong>Resultado: </strong><input class="input"></p>
 <input type="button" value="Calcular">
     </div>
