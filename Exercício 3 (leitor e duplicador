@@ -7,21 +7,21 @@
 </head>
 <body>
     <script>
-        // Solicita ao usuário que insira um número inteiro
+        
         var numero = prompt("Digite um número inteiro:");
 
-        // Converte o valor do prompt para um número
+        
         numero = parseInt(numero);
 
-        // Verifica se o valor inserido é um número e se é um número inteiro
+        
         if (!isNaN(numero)) {
-            // Calcula o dobro do número
+           
             var dobro = numero * 2;
 
-            // Exibe o resultado para o usuário
+            
             alert("O dobro de " + numero + " é " + dobro);
         } else {
-            // Informa ao usuário que o valor inserido não é um número válido
+            
             alert("Por favor, insira um número inteiro válido.");
         }
     </script>
