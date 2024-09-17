@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>número ao quadrado</title>
+</head>
+<body>
+    <script>
+        var numero = prompt("Digite um número:");
+numero = parseFloat(numero);
+
+if (!isNaN(numero)) {
+   
+    var quadrado = numero * numero;
+
+    alert("O quadrado de " + numero + " é " + quadrado);
+} else {   
+    alert("Por favor, insira um número válido.");
+}     
+    </script>
+</body>
+</html>
