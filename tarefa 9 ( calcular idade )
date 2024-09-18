@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calc idade</title>
+</head>
+<body>
+    <script>
+    function calcularIdade() {
+       
+        const nome = prompt("Digite seu nome:");
+         
+        const anoNascimento = parseInt(prompt("Digite o ano de nascimento:"));
+        
+        const anoAtual = parseInt(prompt("Digite o ano atual:"));
+        
+        const idade = anoAtual - anoNascimento;
+        
+        console.log("Nome: " + nome);
+        console.log("Idade: " + idade);
+    }
+
+    calcularIdade();
+</script>
+    </body>
+</html>
