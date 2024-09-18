@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Degraus</title>
+</head>
+<body>
+    <script>
+   function calcularDegraus() {
+
+    const alturaDegrau = parseFloat(prompt("Digite a altura de um degrau (em metros):"));
+
+    const alturaDesejada = parseFloat(prompt("Digite a altura que deseja alcançar (em metros):"));
+    
+    const numeroDegraus = Math.ceil(alturaDesejada / alturaDegrau);
+
+    console.log("Número de degraus a serem subidos: " + numeroDegraus);
+}
+
+calcularDegraus();
+</script>
+    </body>
+</html>
