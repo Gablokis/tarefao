@@ -1,0 +1,11 @@
+select * from hr.employees where salary between (1000) and (5000);
+select * from hr.employees where employee_id = 102 or employee_id = 177 or employee_id = 178;
+select employee_id as codigo, salary as salario, salary*1.2 as salario_com_bonus from hr.employees;
+select first_name, last_name, salary, job_id from hr.employees where last_name in ('King', 'Taylor');
+select employee_id, first_name, last_name, salary, job_id commission_pct from hr.employees where commission_pct is null;
+select first_name, last_name, salary, job_id from hr.employees where first_name like 'M%';
+select first_name, last_name, salary, job_id from hr.employees where first_name like 'A%' or first_name like 'J$';
+select first_name ||''|| last_name as full_name, salary as salario_mensal, (salary+700) as salario_com_bonus, job_id from hr.employees where job_id in ('SH_CLERK', 'SA_MAN');
+select count(*) as quantidade_empregados_com_comissao from hr.employees where department_id = 80 and commission_pct is not null;
+select MAX(salary) as maior_salario from hr.employees where department_id = 20;
+select SUM(salary) as soma_salarios from hr.employees where job_id = 'SA_MAN';
