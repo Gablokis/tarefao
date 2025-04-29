@@ -1,0 +1,76 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Diagrama de Sequência e Colaboração" id="hRZVG1XmH-2GoPEqqnOo">
+    <mxGraphModel dx="1482" dy="789" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- Participantes do Diagrama de Sequência -->
+        <mxCell id="cliente" value="Cliente" style="swimlane" vertex="1" parent="1">
+          <mxGeometry x="0" y="0" width="140" height="600" as="geometry" />
+        </mxCell>
+        <mxCell id="sistema" value="Sistema Web" style="swimlane" vertex="1" parent="1">
+          <mxGeometry x="150" y="0" width="140" height="600" as="geometry" />
+        </mxCell>
+        <mxCell id="logistica" value="Logística/Transporte" style="swimlane" vertex="1" parent="1">
+          <mxGeometry x="300" y="0" width="140" height="600" as="geometry" />
+        </mxCell>
+        <mxCell id="email" value="Serviço de Email" style="swimlane" vertex="1" parent="1">
+          <mxGeometry x="450" y="0" width="140" height="600" as="geometry" />
+        </mxCell>
+        
+        <!-- Mensagens do Diagrama de Sequência -->
+        <mxCell id="2" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;" edge="1" parent="1" source="cliente" target="sistema">
+          <mxGeometry relative="1" />
+          <mxCell value="1. Preenche CEP e vê opções de entrega" />
+        </mxCell>
+        <mxCell id="3" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;" edge="1" parent="1" source="sistema" target="logistica">
+          <mxGeometry relative="1" />
+          <mxCell value="2. Solicita opções de entrega" />
+        </mxCell>
+        <mxCell id="4" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;" edge="1" parent="1" source="logistica" target="sistema">
+          <mxGeometry relative="1" />
+          <mxCell value="3. Retorna opções disponíveis" />
+        </mxCell>
+        <mxCell id="5" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;" edge="1" parent="1" source="cliente" target="sistema">
+          <mxGeometry relative="1" />
+          <mxCell value="4. Seleciona retirada em loja" />
+        </mxCell>
+        <mxCell id="6" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;" edge="1" parent="1" source="cliente" target="sistema">
+          <mxGeometry relative="1" />
+          <mxCell value="5. Fornece dados de pagamento e confirma" />
+        </mxCell>
+        <mxCell id="7" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;" edge="1" parent="1" source="sistema" target="logistica">
+          <mxGeometry relative="1" />
+          <mxCell value="6. Aciona separação do pedido" />
+        </mxCell>
+        <mxCell id="8" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;" edge="1" parent="1" source="sistema" target="email">
+          <mxGeometry relative="1" />
+          <mxCell value="7. Envia email de confirmação do pedido" />
+        </mxCell>
+        <mxCell id="9" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;" edge="1" parent="1" source="logistica" target="sistema">
+          <mxGeometry relative="1" />
+          <mxCell value="8. Finaliza preparação" />
+        </mxCell>
+        <mxCell id="10" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;" edge="1" parent="1" source="sistema" target="cliente">
+          <mxGeometry relative="1" />
+          <mxCell value="9. Notifica que pedido está disponível para retirada" />
+        </mxCell>
+
+        <!-- Diagrama de Colaboração - referências rápidas -->
+        <mxCell id="col1" value="Cliente interage com Sistema Web" style="note" vertex="1" parent="1">
+          <mxGeometry x="650" y="50" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="col2" value="Sistema comunica Logística e Email" style="note" vertex="1" parent="1">
+          <mxGeometry x="650" y="120" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="col3" value="Logística atualiza Sistema após separação" style="note" vertex="1" parent="1">
+          <mxGeometry x="650" y="190" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="col4" value="Sistema notifica Cliente da retirada" style="note" vertex="1" parent="1">
+          <mxGeometry x="650" y="260" width="200" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
